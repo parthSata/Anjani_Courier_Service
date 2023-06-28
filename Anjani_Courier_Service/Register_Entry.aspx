@@ -49,6 +49,7 @@
                                                 <option value="2">Subject 1</option>
                                                 <option value="3">Subject 2</option>
                                                 <option value="4">Subject 3</option>
+                                                <option value="4">Subject 3</option>
                                             </select>
                                         </div>
 
