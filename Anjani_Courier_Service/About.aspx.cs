@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Anjani_Courier_Service
 {
-    public partial class Home : System.Web.UI.Page
+    public partial class About : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Login.aspx");
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Anjani_Courier_Service
 {
-    public partial class Registration_Form : System.Web.UI.Page
+    public partial class Contact : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
