@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg  bg-dark-subtle">
+    <nav class="navbar navbar-expand-lg sticky-top bg-dark-subtle">
         <div class="container-fluid">
             <a class="navbar-brand" href="Home.aspx">Anjani Courier Service</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,11 +34,12 @@
                         <asp:HyperLink runat="server" ID="HyperLink1" NavigateUrl="~/Register_Entry.aspx" CssClass="nav-link" Text="Entry" />
                     </li>
 
-                </ul>
-                <form class="d-flex" role="search" runat="server">
 
-                    <asp:Button ID="Button1" runat="server" class="btn btn-outline-dark bg-primary text-white" Text="Login" OnClick="Button1_Click" />
-                </form>
+                     <%--<li class="nav-item">
+                        <asp:HyperLink runat="server" ID="HyperLink2" NavigateUrl="~/Login.aspx" CssClass="nav-link" Text="Login" />
+                    </li>--%>
+                </ul>
+               
             </div>
         </div>
     </nav>

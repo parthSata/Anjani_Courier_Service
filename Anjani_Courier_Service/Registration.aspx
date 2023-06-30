@@ -8,6 +8,40 @@
     <title></title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg  bg-dark-subtle">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.aspx">Anjani Courier Service</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <asp:HyperLink runat="server" ID="NavLinkHome" NavigateUrl="~/Home.aspx" CssClass="nav-link active" Text="Home" />
+
+                    </li>
+
+                    <li class="nav-item">
+                        <asp:HyperLink runat="server" ID="NavLinkAbout" NavigateUrl="~/About.aspx" CssClass="nav-link" Text="About Us" />
+
+                    </li>
+
+                    <li class="nav-item">
+                        <asp:HyperLink runat="server" ID="NavLinkContact" NavigateUrl="~/Contact.aspx" CssClass="nav-link" Text="Contact Us" />
+                    </li>
+
+                    <li class="nav-item">
+                        <asp:HyperLink runat="server" ID="HyperLink1" NavigateUrl="~/Register_Entry.aspx" CssClass="nav-link" Text="Entry" />
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search" runat="server">
+
+                    <asp:Button ID="Button2" runat="server" class="btn btn-outline-dark bg-primary text-white" Text="Login" OnClick="Button1_Click" />
+                </form>
+            </div>
+        </div>
+    </nav>
  <section class="h-100 h-custom" style="background-color: white;" runat="server">
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">

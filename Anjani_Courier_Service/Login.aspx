@@ -87,10 +87,10 @@
                                 <div class="text-center text-lg-start mt-4 pt-2">
                                     <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary btn-lg" Style="padding-left: 2.5rem; padding-right: 2.5rem;" Text="Login" OnClick="Button1_Click" />
 
-                                    <p class="small fw-bold mt-2 pt-1 mb-0">
+                                   <%-- <p class="small fw-bold mt-2 pt-1 mb-0">
                                         Don't have an account? <a href="Registration.aspx" runat="server"
                                             class="link-danger">Register</a>
-                                    </p>
+                                    </p>--%>
                                 </div>
                             </div>
                         </div>
