@@ -88,13 +88,12 @@
                                             
 
                                             <label class="form-label" for="form3Example1q">Total Amoutnt :</label>
-                                            <asp:TextBox class="form-control form-control-lg" ID="text_total" runat="server"></asp:TextBox>
+                                            <asp:TextBox class="form-control disabled form-control-lg" ID="text_total" runat="server"></asp:TextBox>
 
                                             <label class="form-label" for="form3Example1q">To Destination :</label>
                                             <asp:TextBox class="form-control form-control-lg" ID="text_toDestination" runat="server"></asp:TextBox>
                                             
                                         </div>
-
                                     </div>
                                 </div>
 
@@ -109,7 +108,7 @@
                                         
                                 </div>
                                 <div class="pl-0 mt-4">
-                                    <asp:GridView ID="GridView1"  runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black">
+                                    <asp:GridView ID="GridView1"  runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" Width="402px">
                                         <FooterStyle BackColor="#CCCCCC" />
                                         <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
                                         <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />

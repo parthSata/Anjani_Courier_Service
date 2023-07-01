@@ -72,8 +72,8 @@ Ahmedabad - 380022
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control" />
                             <label for="name" class="">Your name</label>
+                            <input type="text" id="name" name="name" class="form-control" />
                         </div>
                     </div>
                     <!--Grid column-->
@@ -81,8 +81,8 @@ Ahmedabad - 380022
                     <!--Grid column-->
                     <div class="col-md-6">
                         <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control" />
                             <label for="email" class="">Your email</label>
+                            <input type="text" id="email" name="email" class="form-control" />
                         </div>
                     </div>
                     <!--Grid column-->
@@ -94,8 +94,8 @@ Ahmedabad - 380022
                 <div class="row">
                     <div class="col-md-12">
                         <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control" />
                             <label for="subject" class="">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" />
                         </div>
                     </div>
                 </div>
@@ -108,8 +108,8 @@ Ahmedabad - 380022
                     <div class="col-md-12">
 
                         <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                             <label for="message">Your message</label>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
                         </div>
 
                     </div>
@@ -119,38 +119,80 @@ Ahmedabad - 380022
 
 
                 <div class="status"></div>
+                
             </div>
-            <div class="text-center text-md-left">
+            <div class="mt-3 text-center text-md-left">
                 <a class="btn btn-primary">Send</a>
             </div>
             <div class="status"></div>
         </div>
-            <!--Grid column-->
     </section>
 
-            <!--Grid column-->
-            <div class="col-md-3 text-center container">
-                <ul class="list-unstyled mb-0">
-                    <li><i class="fa-solid fa-location-dot"></i>
-                        <p>
-                            Shree Anjani House"
-                            34, Old Lati Bazar,
-                            Nr. ST Bus Stand, Raipur
-                            Ahmedabad - 380022
+     <footer class="text-white text-center text-lg-start bg-dark">
+    <div class="container p-4">
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h4 class="display-7 fw-bolder text-white mb-2" style="font-family:'Times New Roman', Times, serif">SHREE ANJANI COURIER SERVICES </h4>
+                        <p class="lead fw-normal text-white-50 mb-4">
+                            SHREE ANJANI COURIER SERVICES PVT. LTD. was incorporated on 8th November 2003 with the director who had 18 years of experience in courier industry.                                
                         </p>
-                    </li>
 
-                    <li><i class="fa-solid fa-location-dot"></i>
-                        <p>+918306614014</p>
-                    </li>
+          <div class="mt-4">
+            <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Facebook</a>
+            <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Instagram</a>
+            <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Twitter</a>
+            <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Google</a>
+          </div>
+        </div>
 
-                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>Anjanicourier@gmail.com</p>
-                    </li>
-                </ul>
-            </div>
-            <!--Grid column-->
-            
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 pb-1">Address :</h5>
 
+          
+
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Shree Anjani House"
+                                                                                    34, Old Lati Bazar,
+                                                                                    Nr. ST Bus Stand, Raipur
+                                                                                    Ahmedabad - 380022</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">Anjanicourier@gmail.com</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+918306614014</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+          <table class="table text-center text-white">
+            <tbody class="fw-normal">
+              <tr>
+                <td>Mon - Sat:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>Holiday</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright By Parth Sata
+    </div>
+    <!-- Copyright -->
+  </footer>
 </body>
 </html>

@@ -9,6 +9,7 @@ using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.ComponentModel;
+using System.Reflection;
 
 namespace Anjani_Courier_Service
 {
@@ -29,8 +30,9 @@ namespace Anjani_Courier_Service
         {
             try
             {
-                if (text_id.Text != "" && text_date.Text != "" && text_party.Text != "" && text_consignment.Text != "" && text_weight.Text != "" && text_total.Text != "" && text_charges.Text != "" && text_toDestination.Text != "" && text_fromDestination.Text != "")
+                if (text_id.Text != "" && text_date.Text != "" && text_party.Text != "" && text_consignment.Text != "" && text_weight.Text != "" && text_total.Text != ""  && text_charges.Text != "" && text_toDestination.Text != "" && text_fromDestination.Text != "")
                 {
+                    
                     string sql = "insert into Registration values('" + text_id.Text + "','" + text_date.Text + "','" + text_party.Text + "','" + text_consignment.Text + "','" + text_weight.Text + "','" + text_total.Text + "','" + text_charges.Text + "','" + text_toDestination.Text + "','" + text_fromDestination.Text + "')";
                     SqlDataAdapter da = new SqlDataAdapter(sql, con);
                     DataTable dt = new DataTable();
@@ -88,7 +90,7 @@ namespace Anjani_Courier_Service
                 SqlDataAdapter da = new SqlDataAdapter(sql, con);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-
+                operation();
                 show();
                 clear();
             }
@@ -131,6 +133,18 @@ namespace Anjani_Courier_Service
         protected void btn_clear_Click1(object sender, EventArgs e)
         {
             clear();
+        }
+        public void operation()
+        {
+            int firstno;
+            int secondno;
+
+            firstno = Convert.ToInt32(text_weight.Text);
+            secondno = Convert.ToInt32(text_charges.Text);
+
+            int answer = firstno * secondno;
+
+            text_total.Text = answer.ToString();
         }
     }
 }

@@ -33,12 +33,14 @@ namespace Anjani_Courier_Service.Content
                 }
                 else
                 {
-                    Response.Write("Invalid user");
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Invalid Email Or Password');", true);
+
                 }
             }
             else
             {
-                Response.Write("<script  >alert('Please Enter Email And Password')</script>");
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Please Enter Email And Password'');", true);
+
             }
         }
 

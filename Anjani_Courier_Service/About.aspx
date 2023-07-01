@@ -44,7 +44,7 @@
     </nav>
     <form id="form1" runat="server">
         <div class="container">
-            <h2 class="text-center">About Us</h2>
+            <h2 class="text-center mt-3">About Us</h2>
            <p>SHREE ANJANI the name the business community trusts and relies on daily for its delivery of time sensitive documents and parcels.</p>
            <p>SHREE ANJANI COURIER SERVICES PVT. LTD. was incorporated on 8th November 2003 with the director who had 18 years of experience in courier industry.</p>
            <p>Over the period, effectively studied and learned the industry, gradually investing its time and resources into quality personnel. Further more throughout this time, built up an impressive array of customers who continue to rely on and are still the focal parameters used to measure our success rate on a daily basis.
@@ -56,5 +56,83 @@
            <p>Our business philosophy has been to keep every single client hassle-free and smiling. With all the precautions taken, human error factor creeps in, and as a result both of us are subjected to embarrassing situation. We have highly trained CUSTOMER CARE EXECUTIVE at each Service Centre to resolve your grievances. This has invariably resulted in a positive impact on our clients “bottomlines”.</p>
         </div>
     </form>
+     <footer class="text-white mt-5 text-center text-lg-start bg-dark">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h4 class="display-7 fw-bolder text-white mb-2" style="font-family:'Times New Roman', Times, serif">SHREE ANJANI COURIER SERVICES </h4>
+                        <p class="lead fw-normal text-white-50 mb-4">
+                            SHREE ANJANI COURIER SERVICES PVT. LTD. was incorporated on 8th November 2003 with the director who had 18 years of experience in courier industry.                                
+                        </p>
+
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Facebook</a>
+            <!-- Dribbble -->
+            <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Instagram</a>
+            <!-- Twitter -->
+            <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Twitter</a>
+            <!-- Google + -->
+            <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Google</a>
+            <!-- Linkedin -->
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4 pb-1">Address :</h5>
+
+          
+
+          <ul class="fa-ul" style="margin-left: 1.65em;">
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Shree Anjani House"
+                                                                                    34, Old Lati Bazar,
+                                                                                    Nr. ST Bus Stand, Raipur
+                                                                                    Ahmedabad - 380022</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">Anjanicourier@gmail.com</span>
+            </li>
+            <li class="mb-3">
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+918306614014</span>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+          <table class="table text-center text-white">
+            <tbody class="fw-normal">
+              <tr>
+                <td>Mon - Sat:</td>
+                <td>8am - 9pm</td>
+              </tr>
+              <tr>
+                <td>Sunday:</td>
+                <td>Holiday</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright By Parth Sata
+    </div>
+    <!-- Copyright -->
+  </footer>
 </body>
 </html>
