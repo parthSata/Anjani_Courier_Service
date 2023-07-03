@@ -36,7 +36,7 @@
 
 
                      <%--<li class="nav-item">
-                        <asp:HyperLink runat="server" ID="HyperLink2" NavigateUrl="~/Login.aspx" CssClass="nav-link" Text="Login" />
+                        <asp:HyperLink runat="server" ID="HyperLink2" NavigateUrl="~/Lgin.aspx" CssClass="nav-link" Text="Login" />
                     </li>--%>
                 </ul>
                
