@@ -50,7 +50,7 @@
                     <div class="my-5 text-center text-xl-start">
                         <h1 class="display-7 fw-bolder text-white mb-2" style="font-family:'Times New Roman', Times, serif">SHREE ANJANI COURIER SERVICES </h1>
                         <p class="lead fw-normal text-white-50 mb-4">
-                            SHREE ANJANI COURIER SERVICES PVT. LTD. was incorporated on 8th November 2003 with the director who had 18 years of experience in courier industry.                                
+                            SHREE ANJANI COURIER SERVICES PVT.LTD. was incorporated on 8th November 2003 with the director who had 18 years of experience in courier industry.                                
                         </p>
                     </div>
                 </div>
