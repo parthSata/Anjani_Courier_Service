@@ -34,12 +34,10 @@
                         <asp:HyperLink runat="server" ID="HyperLink1" NavigateUrl="~/Register_Entry.aspx" CssClass="nav-link" Text="Entry" />
                     </li>
 
-
-                     <%--<li class="nav-item">
-                        <asp:HyperLink runat="server" ID="HyperLink2" NavigateUrl="~/Lgin.aspx" CssClass="nav-link" Text="Login" />
-                    </li>--%>
                 </ul>
-               
+              <%--  <form class="d-flex" role="search" runat="server">
+                    <asp:Button ID="Button1" class="btn btn-outline-primary" runat="server" Text="Logout" OnClick="Button1_Click1" />
+                </form>--%>
             </div>
         </div>
     </nav>
@@ -48,7 +46,7 @@
             <div class="row gx-5 align-items-center justify-content-center">
                 <div class="col-lg-8 col-xl-7 col-xxl-6">
                     <div class="my-5 text-center text-xl-start">
-                        <h1 class="display-7 fw-bolder text-white mb-2" style="font-family:'Times New Roman', Times, serif">SHREE ANJANI COURIER SERVICES </h1>
+                        <h1 class="display-7 fw-bolder text-white mb-2" style="font-family: 'Times New Roman', Times, serif">SHREE ANJANI COURIER SERVICES </h1>
                         <p class="lead fw-normal text-white-50 mb-4">
                             SHREE ANJANI COURIER SERVICES PVT.LTD. was incorporated on 8th November 2003 with the director who had 18 years of experience in courier industry.                                
                         </p>
@@ -80,82 +78,82 @@ From the beginning, we recognized that when we perform for you, our performance 
     </div>
     <!-- Footer-->
     <footer class="text-white text-center text-lg-start bg-dark">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
-      <div class="row mt-4">
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-          <h4 class="display-7 fw-bolder text-white mb-2" style="font-family:'Times New Roman', Times, serif">SHREE ANJANI COURIER SERVICES </h4>
-                        <p class="lead fw-normal text-white-50 mb-4">
-                            SHREE ANJANI COURIER SERVICES PVT. LTD. was incorporated on 8th November 2003 with the director who had 18 years of experience in courier industry.                                
-                        </p>
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h4 class="display-7 fw-bolder text-white mb-2" style="font-family: 'Times New Roman', Times, serif">SHREE ANJANI COURIER SERVICES </h4>
+                    <p class="lead fw-normal text-white-50 mb-4">
+                        SHREE ANJANI COURIER SERVICES PVT. LTD. was incorporated on 8th November 2003 with the director who had 18 years of experience in courier industry.                                
+                    </p>
 
-          <div class="mt-4">
-            <!-- Facebook -->
-            <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Facebook</a>
-            <!-- Dribbble -->
-            <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Instagram</a>
-            <!-- Twitter -->
-            <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Twitter</a>
-            <!-- Google + -->
-            <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Google</a>
-            <!-- Linkedin -->
-          </div>
-        </div>
-        <!--Grid column-->
+                    <div class="mt-4">
+                        <!-- Facebook -->
+                        <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Facebook</a>
+                        <!-- Dribbble -->
+                        <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Instagram</a>
+                        <!-- Twitter -->
+                        <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Twitter</a>
+                        <!-- Google + -->
+                        <a type="button" href="#" class="btn btn-floating btn-primary btn-sm">Google</a>
+                        <!-- Linkedin -->
+                    </div>
+                </div>
+                <!--Grid column-->
 
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4 pb-1">Address :</h5>
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4 pb-1">Address :</h5>
 
-          
 
-          <ul class="fa-ul" style="margin-left: 1.65em;">
-            <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Shree Anjani House"
+
+                    <ul class="fa-ul" style="margin-left: 1.65em;">
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Shree Anjani House"
                                                                                     34, Old Lati Bazar,
                                                                                     Nr. ST Bus Stand, Raipur
                                                                                     Ahmedabad - 380022</span>
-            </li>
-            <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">Anjanicourier@gmail.com</span>
-            </li>
-            <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+918306614014</span>
-            </li>
-          </ul>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">Anjanicourier@gmail.com</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+918306614014</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                    <table class="table text-center text-white">
+                        <tbody class="fw-normal">
+                            <tr>
+                                <td>Mon - Sat:</td>
+                                <td>8am - 9pm</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday:</td>
+                                <td>Holiday</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
         </div>
-        <!--Grid column-->
+        <!-- Grid container -->
 
-        <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase mb-4">Opening hours</h5>
-
-          <table class="table text-center text-white">
-            <tbody class="fw-normal">
-              <tr>
-                <td>Mon - Sat:</td>
-                <td>8am - 9pm</td>
-              </tr>
-              <tr>
-                <td>Sunday:</td>
-                <td>Holiday</td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright By Parth Sata
         </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2023 Copyright By Parth Sata
-    </div>
-    <!-- Copyright -->
-  </footer>
+        <!-- Copyright -->
+    </footer>
 </body>
 </html>
