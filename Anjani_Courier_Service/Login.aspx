@@ -42,7 +42,6 @@
                                    class="link-danger">Register</a>
                            </p>
                        </div>
-
                    </form>
                </div>
            </div>
