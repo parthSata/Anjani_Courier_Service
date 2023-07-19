@@ -4,11 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Billing</title>
+    <title>Register Entry</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
 
 </head>
-<body >
+<body>
     <nav class="navbar navbar-expand-lg sticky-top bg-dark-subtle">
         <div class="container-fluid">
             <a class="navbar-brand" href="Home.aspx">Anjani Courier Service</a>
@@ -35,12 +35,12 @@
                         <asp:HyperLink runat="server" ID="HyperLink1" NavigateUrl="~/Register_Entry.aspx" CssClass="nav-link" Text="Entry" />
                     </li>
 
-<%--                     <li class="nav-item">
+                    <%--                     <li class="nav-item">
                         <asp:HyperLink runat="server" ID="HyperLink2" NavigateUrl="~/Login.aspx" CssClass="nav-link" Text="Login" />
                     </li>--%>
                 </ul>
 
-               
+
             </div>
         </div>
     </nav>
@@ -49,7 +49,7 @@
             <div class="row justify-content-center align-items-center h-100">
                 <div class="col-12 col-lg-9 col-xl-7">
                     <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
-                            <img src="https://content3.jdmagicbox.com/comp/palitana/j3/0278px278.x278.140418001002.d2j3/catalogue/shree-anjani-courier-services-pvt-ltd-palitana-palitana-courier-services-anjani-01n1e8a5l1.jpg" />
+                        <img src="https://content3.jdmagicbox.com/comp/palitana/j3/0278px278.x278.140418001002.d2j3/catalogue/shree-anjani-courier-services-pvt-ltd-palitana-palitana-courier-services-anjani-01n1e8a5l1.jpg" />
 
                         <div class="card-body p-4 p-md-5">
                             <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Courier Entry </h3>
@@ -60,20 +60,20 @@
 
                                         <div class="form-outline ">
                                             <label class="form-label" for="form3Example1q">ID :</label>
-                                            <asp:TextBox class="form-control form-control-lg" type="number" ID="text_id" runat="server"></asp:TextBox>
+                                            <asp:TextBox class="form-control form-control-lg" placeholder="Enter ID" type="number" ID="text_id" runat="server"></asp:TextBox>
 
-                                           
-                                            <label class="form-label" for="form3Example1q">Party Name :</label>
-                                            <asp:TextBox class="form-control form-control-lg" ID="text_party" runat="server"></asp:TextBox>
+
+                                            <label class="form-label" for="form3Example1q">Company Name :</label>
+                                            <asp:TextBox class="form-control form-control-lg" ID="text_party" placeholder="Enter Company Name" runat="server"></asp:TextBox>
 
                                             <label class="form-label" for="form3Example1q">Weight :</label>
-                                            <asp:TextBox class="form-control form-control-lg" ID="text_weight" runat="server"></asp:TextBox>
+                                            <asp:TextBox class="form-control form-control-lg" ID="text_weight" placeholder="Enter Weight" runat="server" OnTextChanged="text_weight_TextChanged"></asp:TextBox>
 
                                             <label class="form-label" for="form3Example1q">Charges :</label>
-                                            <asp:TextBox class="form-control form-control-lg" ID="text_charges" runat="server"></asp:TextBox>
-                                           
+                                            <asp:TextBox class="form-control form-control-lg" ID="text_charges" placeholder="Enter Charges" runat="server" OnTextChanged="text_charges_TextChanged" AutoPostBack="true"></asp:TextBox>
+
                                             <label class="form-label" for="form3Example1q">From Destination :</label>
-                                            <asp:TextBox class="form-control form-control-lg" ID="text_fromDestination" runat="server"></asp:TextBox>
+                                            <asp:TextBox class="form-control form-control-lg" placeholder="From Destination" ID="text_fromDestination" runat="server"></asp:TextBox>
                                         </div>
 
                                     </div>
@@ -82,17 +82,20 @@
                                         <div class="form-outline">
                                             <label class="form-label" for="form3Example1q">Date :</label>
                                             <asp:TextBox class="form-control form-control-lg" type="date" ID="text_date" runat="server"></asp:TextBox>
+                                            <asp:CompareValidator ID="dateValidator" runat="server" Type="Date" Operator="DataTypeCheck" ControlToValidate="text_date" ErrorMessage="Please enter a valid date."></asp:CompareValidator>
 
-                                             <label class="form-label " for="form3Example1q">Consignment No :</label>
-                                            <asp:TextBox class="form-control form-control-lg" type="number" ID="text_consignment" runat="server"></asp:TextBox>
-                                            
+                                            <br />
+
+                                            <label class="form-label " for="form3Example1q">Consignment No :</label>
+                                            <asp:TextBox class="form-control form-control-lg" type="number" placeholder="Consignment No" ID="text_consignment" runat="server"></asp:TextBox>
+
 
                                             <label class="form-label" for="form3Example1q">Total Amoutnt :</label>
-                                            <asp:TextBox class="form-control disabled form-control-lg" ID="text_total" runat="server"></asp:TextBox>
+                                            <asp:TextBox class="form-control disabled form-control-lg" placeholder="Total Amoutnt" ID="text_total" runat="server" OnTextChanged="text_total_TextChanged"></asp:TextBox>
 
                                             <label class="form-label" for="form3Example1q">To Destination :</label>
-                                            <asp:TextBox class="form-control form-control-lg" ID="text_toDestination" runat="server"></asp:TextBox>
-                                            
+                                            <asp:TextBox class="form-control form-control-lg" placeholder="To Destination" ID="text_toDestination" runat="server"></asp:TextBox>
+
                                         </div>
                                     </div>
                                 </div>
@@ -100,15 +103,15 @@
                                 <%--<asp:GridView ID="GridView1" runat="server" AlternatingRowStyle-HorizontalAlign="center" Width="783px"></asp:GridView>--%>
 
                                 <div class="mt-4 d-flex justify-content-evenly pt-2">
-                                    <asp:Button ID="btn_submit" class="btn btn-primary btn-lg" runat="server" Text="Submit" OnClick="btn_submit_Click1"  />
-                                    <asp:Button ID="btn_update" class="btn btn-primary btn-lg" runat="server" Text="Update" OnClick="btn_update_Click"   />
-                                    <asp:Button ID="btn_delete" class="btn btn-primary btn-lg" runat="server" Text="Delete" OnClick="btn_delete_Click"   />
-                                    <asp:Button ID="btn_search" class="btn btn-primary btn-lg" runat="server" Text="Search" OnClick="btn_search_Click"    />
-                                    <asp:Button ID="btn_clear" class="btn btn-primary btn-lg" runat="server" Text="Clear" OnClick="btn_clear_Click1"   />
-                                        
+                                    <asp:Button ID="btn_submit" class="btn btn-primary btn-lg" runat="server" Text="Submit" OnClick="btn_submit_Click1" />
+                                    <asp:Button ID="btn_update" class="btn btn-primary btn-lg" runat="server" Text="Update" OnClick="btn_update_Click" />
+                                    <asp:Button ID="btn_delete" class="btn btn-primary btn-lg" runat="server" Text="Delete" OnClick="btn_delete_Click" />
+                                    <asp:Button ID="btn_search" class="btn btn-primary btn-lg" runat="server" Text="Search" OnClick="btn_search_Click" />
+                                    <asp:Button ID="btn_clear" class="btn btn-primary btn-lg" runat="server" Text="Clear" OnClick="btn_clear_Click1" />
+
                                 </div>
                                 <div class="pl-0 mt-4">
-                                    <asp:GridView ID="GridView1"  runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" Width="402px">
+                                    <asp:GridView ID="GridView1" runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" Width="402px">
                                         <FooterStyle BackColor="#CCCCCC" />
                                         <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
                                         <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
@@ -126,7 +129,7 @@
                 </div>
             </div>
         </div>
-        
+
     </section>
 </body>
 </html>

@@ -60,72 +60,73 @@ Ahmedabad - 380022
         a matter of hours to help you.
         </p>
 
-        <div class="row">
+        <form runat="server">
+            <div class="row">
 
-            <!--Grid column-->
-            <div class="col-md-9 mb-md-0 mb-5">
-                <form   runat="server"  />
+                <!--Grid column-->
+                <div class="col-md-9 mb-md-0 mb-5">
 
-                <!--Grid row-->
-                <div class="row">
+                    <!--Grid row-->
+                    <div class="row">
 
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <label for="name" class="">Your name</label>
-                            <input type="text" id="name" name="name" class="form-control" />
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="name" class="">Your name</label>
+                                <asp:TextBox ID="TextBox1" class="form-control" runat="server"></asp:TextBox>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <label for="email" class="">Your email</label>
+                                <asp:TextBox ID="TextBox2" class="form-control" runat="server"></asp:TextBox>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <label for="subject" class="">Subject</label>
+                                <asp:TextBox ID="TextBox3" class="form-control" runat="server"></asp:TextBox>
+                            </div>
                         </div>
                     </div>
-                    <!--Grid column-->
+                    <!--Grid row-->
 
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <label for="email" class="">Your email</label>
-                            <input type="text" id="email" name="email" class="form-control" />
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+
+                            <div class="md-form">
+                                <label for="message">Your message</label>
+                                <textarea id="TextArea1" cols="20" class="form-control md-textarea" rows="2"></textarea>
+                            </div>
+
                         </div>
                     </div>
-                    <!--Grid column-->
+                    <!--Grid row-->
+
+
+
+                    <div class="status"></div>
 
                 </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <label for="subject" class="">Subject</label>
-                            <input type="text" id="subject" name="subject" class="form-control" />
-                        </div>
-                    </div>
+                <div class="mt-3 text-center text-md-left">
+                    <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Send" />
                 </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <label for="message">Your message</label>
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-
-
-
                 <div class="status"></div>
-                
             </div>
-            <div class="mt-3 text-center text-md-left">
-                <a class="btn btn-primary">Send</a>
-            </div>
-            <div class="status"></div>
-        </div>
+        </form>
     </section>
 
      <footer class="text-white text-center text-lg-start bg-dark">

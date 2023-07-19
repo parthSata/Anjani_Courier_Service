@@ -28,7 +28,7 @@ namespace Anjani_Courier_Service.Content
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())
                 {
-                    
+                    Session["User_Id"] = text_usename;
                     Response.Redirect("Home.aspx");
                 }
                 else

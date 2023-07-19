@@ -35,9 +35,9 @@
                     </li>
 
                 </ul>
-              <%--  <form class="d-flex" role="search" runat="server">
+               <form class="d-flex" role="search" runat="server">
                     <asp:Button ID="Button1" class="btn btn-outline-primary" runat="server" Text="Logout" OnClick="Button1_Click1" />
-                </form>--%>
+                </form>
             </div>
         </div>
     </nav>
