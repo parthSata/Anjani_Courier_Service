@@ -34,7 +34,6 @@ namespace Anjani_Courier_Service.Content
                 else
                 {
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Invalid Email Or Password');", true);
-
                 }
             }
             else
