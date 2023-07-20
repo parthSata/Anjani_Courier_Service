@@ -35,10 +35,10 @@
                     </li>
 
                 </ul>
-                <form class="d-flex" role="search" runat="server">
+                <%--<form class="d-flex" role="search" runat="server">
 
                     <asp:Button ID="Button2" runat="server" class="btn btn-outline-dark bg-primary text-white" Text="Login" OnClick="Button1_Click" />
-                </form>
+                </form>--%>
             </div>
         </div>
     </nav>
@@ -57,20 +57,23 @@
 
                                     <div class="form-outline mb-4" runat="server">
                                         <label class="form-label" for="form3Example1q">First Name :</label>
-                                        <asp:TextBox class="form-control" ID="TextBox1" runat="server"></asp:TextBox>
+                                        <asp:TextBox class="form-control" ID="Text_fname" runat="server"></asp:TextBox>
 
                                         <label class="form-label mt-1" for="form3Example1q">Last Name :</label>
-                                        <asp:TextBox class="form-control" ID="TextBox2" runat="server"></asp:TextBox>
+                                        <asp:TextBox class="form-control" ID="Text_lname" runat="server"></asp:TextBox>
 
                                         <label class="form-label mt-1" for="form3Example1q">Email :</label>
-                                        <asp:TextBox class="form-control" type="email" ID="TextBox3" runat="server"></asp:TextBox>
+                                        <asp:TextBox class="form-control" type="email" ID="Text_email" runat="server"></asp:TextBox>
 
-                                        <label class="form-label mt-1" for="form3Example1q">Password :</label>
-                                        <asp:TextBox class="form-control" type="password" ID="TextBox4" runat="server"></asp:TextBox>
+                                        <label class="form-label mt-1" for="form3Example1q">Username :</label>
+                                        <asp:TextBox class="form-control"  ID="Text_username" runat="server"></asp:TextBox>
+
+                                        <label class="form-label mt-1" for="form3Example1q"> Password :</label>
+                                        <asp:TextBox class="form-control" type="password" ID="Text_pass" runat="server"></asp:TextBox>
                                         
-                                        <label class="form-label mt-1" for="form3Example1q">Confirm Password :</label>
-                                        <asp:TextBox class="form-control" type="password" ID="TextBox5" runat="server"></asp:TextBox>
-                                        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Check Your Password is Not Matched" ControlToCompare="TextBox4" ControlToValidate="TextBox5" Font-Bold="True" Font-Underline="True" ForeColor="Red"></asp:CompareValidator><br />
+                                        <label class="form-label mt-1" for="form3Example1q"> Confirm Password :</label>
+                                        <asp:TextBox class="form-control" type="password" ID="Text_cpass" runat="server"></asp:TextBox>
+                                        <asp:CompareValidator ID="CompareValidator1" runat="server" ErrorMessage="Check Your Password is Not Matched" ControlToCompare="Text_pass" ControlToValidate="Text_cpass" Font-Bold="True" Font-Underline="True" ForeColor="Red"></asp:CompareValidator><br />
                                     </div>
 
                                     <asp:Button ID="Button1" class="btn btn-primary btn-lg text-center"  runat="server" Text="Submit"  OnClick="Button1_Click"    />

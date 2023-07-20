@@ -23,7 +23,7 @@ namespace Anjani_Courier_Service.Content
         {
             if (text_usename.Text != "" && text_pass.Text != "")
             {
-                string str = "select * from Login info  where username='" + text_usename.Text + "'and password='" + text_pass.Text + "'";
+                string str = "select * from Register_user  where Username='" + text_usename.Text + "'and Password='" + text_pass.Text + "'";
                 SqlCommand cmd = new SqlCommand(str, con);
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read())

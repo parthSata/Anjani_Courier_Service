@@ -20,13 +20,14 @@ namespace Anjani_Courier_Service
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (TextBox1.Text != "" && TextBox2.Text != "" && TextBox3.Text != "" && TextBox4.Text != "" && TextBox5.Text != "")
+            if (Text_fname.Text != "" && Text_lname.Text != "" && Text_email.Text != "" && Text_username.Text != "" && Text_pass.Text != "" && Text_cpass.Text != "")
             {
-                string sql = "insert into Register_user values('" + TextBox1.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + TextBox5.Text + "','" + CompareValidator1.Text + "')";
+                string sql = "insert into Register_user values('" + Text_fname.Text + "','" + Text_lname.Text + "','" + Text_email.Text + "','"+ Text_username.Text+"','" + Text_pass.Text + "','" + Text_cpass.Text + "')";
                 SqlDataAdapter da = new SqlDataAdapter(sql, con);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
-                Response.Write("You Are Now Registered As a User");
+                Response.Write("<script LANGUAGE='JavaScript' >alert('You Are Now Registered As a User ')</script>");
+                Response.Redirect("Login.aspx");
             }
             else
             {
