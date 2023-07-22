@@ -72,8 +72,15 @@
                                             <label class="form-label" for="form3Example1q">Charges :</label>
                                             <asp:TextBox class="form-control form-control-lg" ID="text_charges" placeholder="Enter Charges" runat="server" OnTextChanged="text_charges_TextChanged" AutoPostBack="true"></asp:TextBox>
 
-                                            <label class="form-label" for="form3Example1q">From Destination :</label>
-                                            <asp:TextBox class="form-control form-control-lg" placeholder="From Destination" ID="text_fromDestination" runat="server"></asp:TextBox>
+                                            <label class="form-label mt-4" for="form3Example1q">From Destination :</label>
+                                            <%--<asp:TextBox class="form-control form-control-lg" placeholder="From Destination" ID="text_fromDestination" runat="server"></asp:TextBox>--%>
+
+                                            <asp:DropDownList ID="From_Destination" class="form-control form-control-lg" runat="server" Width="369px">
+                                                <asp:ListItem Text="Select City" Value="select" Selected="True"></asp:ListItem>
+                                                <asp:ListItem Text="Rajkot" Value="Rajkot"></asp:ListItem>
+                                                <asp:ListItem Text="Surat" Value="Surat"></asp:ListItem>
+                                                <asp:ListItem Text="Ahemdabad" Value="Ahemdabad"></asp:ListItem>
+                                            </asp:DropDownList>
                                         </div>
 
                                     </div>
@@ -91,10 +98,19 @@
 
 
                                             <label class="form-label" for="form3Example1q">Total Amoutnt :</label>
-                                            <asp:TextBox class="form-control disabled form-control-lg" placeholder="Total Amoutnt" ID="text_total" runat="server" OnTextChanged="text_total_TextChanged"></asp:TextBox>
+                                            <asp:TextBox class="form-control disabled form-control-lg" placeholder="Total Amoutnt" ID="text_total" runat="server" OnTextChanged="text_total_TextChanged" ReadOnly="True"></asp:TextBox>
 
-                                            <label class="form-label" for="form3Example1q">To Destination :</label>
-                                            <asp:TextBox class="form-control form-control-lg" placeholder="To Destination" ID="text_toDestination" runat="server"></asp:TextBox>
+
+                                            <label class="form-label mt-4" for="form3Example1q">To Destination :</label>
+                                            <%--<asp:TextBox class="form-control form-control-lg" placeholder="To Destination" ID="text_toDestination" runat="server"></asp:TextBox>--%>
+
+                                            <asp:DropDownList ID="To_Destination" class="form-control form-control-lg" runat="server" Width="379px">
+                                                <asp:ListItem Text="Select City" Value="select" Selected="True"></asp:ListItem>
+                                                <asp:ListItem Text="Rajkot" Value="Rajkot"></asp:ListItem>
+                                                <asp:ListItem Text="Surat" Value="Surat"></asp:ListItem>
+                                                <asp:ListItem Text="Ahemdabad" Value="Ahemdabad"></asp:ListItem>
+                                            </asp:DropDownList>
+
 
                                         </div>
                                     </div>

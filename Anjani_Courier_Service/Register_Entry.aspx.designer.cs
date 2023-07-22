@@ -87,13 +87,13 @@ namespace Anjani_Courier_Service
         protected global::System.Web.UI.WebControls.TextBox text_charges;
 
         /// <summary>
-        /// text_fromDestination control.
+        /// From_Destination control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox text_fromDestination;
+        protected global::System.Web.UI.WebControls.DropDownList From_Destination;
 
         /// <summary>
         /// text_date control.
@@ -132,13 +132,13 @@ namespace Anjani_Courier_Service
         protected global::System.Web.UI.WebControls.TextBox text_total;
 
         /// <summary>
-        /// text_toDestination control.
+        /// To_Destination control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox text_toDestination;
+        protected global::System.Web.UI.WebControls.DropDownList To_Destination;
 
         /// <summary>
         /// btn_submit control.

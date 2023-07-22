@@ -20,7 +20,7 @@ namespace Anjani_Courier_Service
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            //FillDrop();
             show();
         }
 
@@ -29,12 +29,12 @@ namespace Anjani_Courier_Service
         {
             try
             {
-                if (text_id.Text != "" && text_date.Text != "" && text_party.Text != "" && text_consignment.Text != "" && text_weight.Text != "" && text_total.Text  != "" && text_charges.Text != "" && text_toDestination.Text != "" && text_fromDestination.Text != "")
+                if (text_id.Text != "" && text_date.Text != "" && text_party.Text != "" && text_consignment.Text != "" && text_weight.Text != "" && text_total.Text != "" && text_charges.Text != "" && From_Destination.Text != "" && To_Destination.Text != "")
                 {
-                    string sql = "insert into Registration values('" + text_id.Text + "','" + text_date.Text + "','" + text_party.Text + "','" + text_consignment.Text + "','" + text_weight.Text + "','" + text_total.Text + "','" + text_charges.Text + "','" + text_toDestination.Text + "','" + text_fromDestination.Text + "')";
+                    string sql = "insert into Registration values('" + text_id.Text + "','" + text_date.Text + "','" + text_party.Text + "','" + text_consignment.Text + "','" + text_weight.Text + "','" + text_total.Text + "','" + text_charges.Text + "','" + From_Destination.Text + "','" + To_Destination.Text + "')";
                     SqlDataAdapter da = new SqlDataAdapter(sql, con);
                     DataTable dt = new DataTable();
-                    da.Fill(dt);    
+                    da.Fill(dt);
                     show();
                     //Response.Write("You Are Now Registered As a User");
                     clear();
@@ -72,18 +72,18 @@ namespace Anjani_Courier_Service
             text_weight.Text = "";
             text_total.Text = "";
             text_charges.Text = "";
-            text_toDestination.Text = "";
-            text_fromDestination.Text = "";
+            From_Destination.SelectedValue = "";
+            To_Destination.SelectedValue = "";
             text_id.Focus();
         }
 
         protected void btn_update_Click(object sender, EventArgs e)
         {
-            if (text_id.Text != "" && text_date.Text != "" && text_party.Text != "" && text_consignment.Text != "" && text_weight.Text != "" && text_total.Text != "" && text_charges.Text != "" && text_toDestination.Text != "" && text_fromDestination.Text != "")
+            if (text_id.Text != "" && text_date.Text != "" && text_party.Text != "" && text_consignment.Text != "" && text_weight.Text != "" && text_total.Text != "" && text_charges.Text != "" && From_Destination.Text != "" && To_Destination.Text != "")
             {
-                /*                string sql = "UPDATE Registration SET Date='" + text_date.Text + "', Party_Name='" + text_party.Text + "',Consignment_No='" + text_consignment.Text + "', Weight='" + text_weight.Text + "', Total_Amount='" + text_total.Text + "', Charges='" + text_charges.Text + "', To_Destination='" + text_toDestination.Text + "', From_Destination='" + text_fromDestination.Text + "' WHERE Id='" + text_id.Text + "'";
+                /*                string sql = "UPDATE Registration SET Date='" + text_date.Text + "', Party_Name='" + text_party.Text + "',Consignment_No='" + text_consignment.Text + "', Weight='" + text_weight.Text + "', Total_Amount='" + text_total.Text + "', Charges='" + text_charges.Text + "', To_Destination='" + From_Destination.Text + "', From_Destination='" + text_fromDestination.Text + "' WHERE Id='" + text_id.Text + "'";
                 */
-                string sql = "update Registration SET Date='" + text_date.Text + "', Party_Name='" + text_party.Text + "', Consigment_No='" + text_consignment.Text + "', Weight='" + text_weight.Text + "', Total_Amount='" + text_total.Text + "', Charges='" + text_charges.Text + "', To_Destination='" + text_toDestination.Text + "', From_Destination='" + text_fromDestination.Text + "' WHERE Id='" + text_id.Text + "'";
+                string sql = "update Registration SET Date='" + text_date.Text + "', Party_Name='" + text_party.Text + "', Consigment_No='" + text_consignment.Text + "', Weight='" + text_weight.Text + "', Total_Amount='" + text_total.Text + "', Charges='" + text_charges.Text + "', To_Destination='" + To_Destination.Text + "', From_Destination='" + From_Destination.Text + "' WHERE Id='" + text_id.Text + "'";
 
                 SqlDataAdapter da = new SqlDataAdapter(sql, con);
                 DataTable dt = new DataTable();
@@ -113,19 +113,25 @@ namespace Anjani_Courier_Service
 
         protected void btn_search_Click(object sender, EventArgs e)
         {
-            string Sql = "select * from Registration where Id ='" + text_id.Text + "'";
-            SqlDataAdapter da = new SqlDataAdapter(Sql, con);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            text_id.Text = dt.Rows[0][0].ToString();
-            text_date.Text = dt.Rows[0][1].ToString();
-            text_party.Text = dt.Rows[0][2].ToString();
-            text_consignment.Text = dt.Rows[0][3].ToString();
-            text_weight.Text = dt.Rows[0][4].ToString();
-            text_total.Text = dt.Rows[0][5].ToString();
-            text_charges.Text = dt.Rows[0][6].ToString();
-            text_toDestination.Text = dt.Rows[0][7].ToString();
-            text_fromDestination.Text = dt.Rows[0][8].ToString();
+            try
+            {
+                string Sql = "select * from Registration where Id ='" + text_id.Text + "'";
+                SqlDataAdapter da = new SqlDataAdapter(Sql, con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                text_id.Text = dt.Rows[0][0].ToString();
+                text_date.Text = dt.Rows[0][1].ToString();
+                text_party.Text = dt.Rows[0][2].ToString();
+                text_consignment.Text = dt.Rows[0][3].ToString();
+                text_weight.Text = dt.Rows[0][4].ToString();
+                text_total.Text = dt.Rows[0][5].ToString();
+                text_charges.Text = dt.Rows[0][6].ToString();
+                From_Destination.Text = dt.Rows[0][7].ToString();
+                To_Destination.Text = dt.Rows[0][8].ToString();
+            }catch  (Exception ex)
+            {
+                Response.Write("<script LANGUAGE='JavaScript' >alert('No Data Found')</script>");
+            }
         }
 
         protected void btn_clear_Click1(object sender, EventArgs e)
@@ -139,7 +145,7 @@ namespace Anjani_Courier_Service
             bool b1 = int.TryParse(text_weight.Text, out t1);
             bool b2 = int.TryParse(text_charges.Text, out t2);
 
-            if(b1 && b2)
+            if (b1 && b2)
             {
                 text_total.Text = ((t1 * t2)).ToString();
             }
@@ -161,5 +167,6 @@ namespace Anjani_Courier_Service
         {
             operation();
         }
+
     }
 }
