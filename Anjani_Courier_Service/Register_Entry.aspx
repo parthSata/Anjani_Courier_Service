@@ -68,9 +68,13 @@
 
                                             <label class="form-label" for="form3Example1q">Weight :</label>
                                             <asp:TextBox class="form-control form-control-lg" ID="text_weight" placeholder="Enter Weight" runat="server" OnTextChanged="text_weight_TextChanged"></asp:TextBox>
+                                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="text_weight"  ForeColor="Red" runat="server" ErrorMessage="Only Numbers allowed" ValidationExpression="\d+"> </asp:RegularExpressionValidator><br />
+
 
                                             <label class="form-label" for="form3Example1q">Charges :</label>
                                             <asp:TextBox class="form-control form-control-lg" ID="text_charges" placeholder="Enter Charges" runat="server" OnTextChanged="text_charges_TextChanged" AutoPostBack="true"></asp:TextBox>
+                                            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" ControlToValidate="text_charges" ForeColor="Red" runat="server" ErrorMessage="Only Numbers allowed" ValidationExpression="\d+"> </asp:RegularExpressionValidator><br />
+
 
                                             <label class="form-label mt-4" for="form3Example1q">From Destination :</label>
                                             <%--<asp:TextBox class="form-control form-control-lg" placeholder="From Destination" ID="text_fromDestination" runat="server"></asp:TextBox>--%>
