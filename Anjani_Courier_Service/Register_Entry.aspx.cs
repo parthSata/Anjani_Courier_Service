@@ -20,7 +20,12 @@ namespace Anjani_Courier_Service
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //FillDrop();
+
+            if (Session["User_Id"] == null)
+            {
+                Session.Clear();
+                Response.Redirect("Login.aspx");
+            }
             show();
         }
 
@@ -131,6 +136,7 @@ namespace Anjani_Courier_Service
             }catch  (Exception ex)
             {
                 Response.Write("<script LANGUAGE='JavaScript' >alert('No Data Found')</script>");
+                
             }
         }
 

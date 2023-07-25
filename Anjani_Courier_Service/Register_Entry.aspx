@@ -67,13 +67,11 @@
                                             <asp:TextBox class="form-control form-control-lg" ID="text_party" placeholder="Enter Company Name" runat="server"></asp:TextBox>
 
                                             <label class="form-label" for="form3Example1q">Weight :</label>
-                                            <asp:TextBox class="form-control form-control-lg" ID="text_weight" placeholder="Enter Weight" runat="server" OnTextChanged="text_weight_TextChanged"></asp:TextBox>
-                                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" ControlToValidate="text_weight"  ForeColor="Red" runat="server" ErrorMessage="Only Numbers allowed" ValidationExpression="\d+"> </asp:RegularExpressionValidator><br />
+                                            <asp:TextBox class="form-control form-control-lg" ID="text_weight" placeholder="Enter Weight" onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);" runat="server" OnTextChanged="text_weight_TextChanged"></asp:TextBox>
 
 
                                             <label class="form-label" for="form3Example1q">Charges :</label>
-                                            <asp:TextBox class="form-control form-control-lg" ID="text_charges" placeholder="Enter Charges" runat="server" OnTextChanged="text_charges_TextChanged" AutoPostBack="true"></asp:TextBox>
-                                            <asp:RegularExpressionValidator ID="RegularExpressionValidator2" ControlToValidate="text_charges" ForeColor="Red" runat="server" ErrorMessage="Only Numbers allowed" ValidationExpression="\d+"> </asp:RegularExpressionValidator><br />
+                                            <asp:TextBox class="form-control form-control-lg" ID="text_charges" placeholder="Enter Charges" onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);" runat="server" OnTextChanged="text_charges_TextChanged" AutoPostBack="true"></asp:TextBox>
 
 
                                             <label class="form-label mt-4" for="form3Example1q">From Destination :</label>
@@ -98,7 +96,7 @@
                                             <br />
 
                                             <label class="form-label " for="form3Example1q">Consignment No :</label>
-                                            <asp:TextBox class="form-control form-control-lg" type="number" placeholder="Consignment No" ID="text_consignment" runat="server"></asp:TextBox>
+                                            <asp:TextBox class="form-control form-control-lg" onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);" type="number" placeholder="Consignment No" ID="text_consignment" runat="server"></asp:TextBox>
 
 
                                             <label class="form-label" for="form3Example1q">Total Amoutnt :</label>
@@ -134,7 +132,7 @@
                                     <asp:GridView ID="GridView1" runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" Width="402px">
                                         <FooterStyle BackColor="#CCCCCC" />
                                         <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
-                                        <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+                                        <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="center" />
                                         <RowStyle BackColor="White" />
                                         <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
                                         <SortedAscendingCellStyle BackColor="#F1F1F1" />

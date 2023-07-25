@@ -16,9 +16,19 @@ namespace Anjani_Courier_Service
     {
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Parth\Anjani_Courier_Service\Anjani_Courier_Service\App_Data\Login.mdf;Integrated Security=True");
 
-      
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
-        protected void Button1_Click(object sender, EventArgs e)
+            if (Session["User_Id"] == null)
+            {
+                Session.Abandon();
+                Session.Clear();
+                Response.Redirect("Login.aspx");
+            }
+        }
+
+
+            protected void Button1_Click(object sender, EventArgs e)
         {
             if (Text_fname.Text != "" && Text_lname.Text != "" && Text_email.Text != "" && Text_username.Text != "" && Text_pass.Text != "" && Text_cpass.Text != "")
             {

@@ -109,7 +109,7 @@ Ahmedabad - 380022
 
                             <div class="md-form">
                                 <label for="message">Your message</label>
-                                <textarea id="TextArea1" cols="20" class="form-control md-textarea" rows="2"></textarea>
+                                <asp:TextBox ID="TextBox4" class="form-control" runat="server"></asp:TextBox>
                             </div>
 
                         </div>
@@ -122,9 +122,10 @@ Ahmedabad - 380022
 
                 </div>
                 <div class="mt-3 text-center text-md-left">
-                    <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Send" />
+                    <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Send" OnClick="Button1_Click1" />
                 </div>
-                <div class="status"></div>
+                <div class="status">
+                </div>
             </div>
         </form>
     </section>

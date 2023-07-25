@@ -11,14 +11,18 @@ namespace Anjani_Courier_Service
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            if (Session["User_Id"] == null )
+            {
+                Session.Clear();
+                Response.Redirect("Login.aspx");
+            }
         }
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
+            Session.Abandon();
+            Session.Clear();
             Response.Redirect("Login.aspx");
-            Session.Remove("User_Id");
-            Session.RemoveAll();
         }
     }
 }

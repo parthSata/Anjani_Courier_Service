@@ -16,7 +16,6 @@ namespace Anjani_Courier_Service.Content
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Parth\Anjani_Courier_Service\Anjani_Courier_Service\App_Data\Login.mdf;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
-            con.Open();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -24,9 +23,10 @@ namespace Anjani_Courier_Service.Content
             if (text_usename.Text != "" && text_pass.Text != "")
             {
                 string str = "select * from Register_user  where Username='" + text_usename.Text + "'and Password='" + text_pass.Text + "'";
-                SqlCommand cmd = new SqlCommand(str, con);
-                SqlDataReader dr = cmd.ExecuteReader();
-                if (dr.Read())
+                SqlDataAdapter da = new SqlDataAdapter(str,con);  
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt.Rows.Count >0)
                 {
                     Session["User_Id"] = text_usename;
                     Response.Redirect("Home.aspx");
