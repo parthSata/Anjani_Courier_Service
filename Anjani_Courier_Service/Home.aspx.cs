@@ -20,9 +20,16 @@ namespace Anjani_Courier_Service
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
-            Session.Abandon();
-            Session.Clear();
-            Response.Redirect("Login.aspx");
+            if (HiddenField1.Value == "1")
+            {
+                Session.Abandon();
+                Session.Clear();
+                Response.Redirect("Login.aspx");
+            }
+            else
+            {
+
+            }
         }
     }
 }

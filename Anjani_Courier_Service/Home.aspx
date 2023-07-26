@@ -6,6 +6,13 @@
 <head runat="server">
     <title>Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <script>
+        function dialog() {
+            var flag = confirm('Do You Want To Log Out ?');
+            var hdnfld = document.getElementById('<%= HiddenField1.ClientID %>');
+            hdnfld.value = flag ? '1' : '0';
+        }
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg sticky-top bg-dark-subtle">
@@ -36,7 +43,9 @@
 
                 </ul>
                <form class="d-flex" role="search" runat="server">
-                    <asp:Button ID="Button1" class="btn btn-outline-primary" runat="server" Text="Logout" OnClick="Button1_Click1" />
+                    <asp:Button ID="Button1" OnClientClick="dialog()" class="btn btn-outline-primary" runat="server" Text="Logout" OnClick="Button1_Click1" />
+                       <asp:HiddenField ID="HiddenField1" runat="server" />
+
                 </form>
             </div>
         </div>

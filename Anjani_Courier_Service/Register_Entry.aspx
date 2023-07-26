@@ -96,11 +96,11 @@
                                             <br />
 
                                             <label class="form-label " for="form3Example1q">Consignment No :</label>
-                                            <asp:TextBox class="form-control form-control-lg" onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);" type="number" placeholder="Consignment No" ID="text_consignment" runat="server"></asp:TextBox>
+                                            <asp:TextBox class="form-control form-control-lg" onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);"  placeholder="Consignment No" ID="text_consignment" runat="server"></asp:TextBox>
 
 
                                             <label class="form-label" for="form3Example1q">Total Amoutnt :</label>
-                                            <asp:TextBox class="form-control disabled form-control-lg" placeholder="Total Amoutnt" ID="text_total" runat="server" OnTextChanged="text_total_TextChanged" ReadOnly="True"></asp:TextBox>
+                                            <asp:TextBox class="form-control disabled form-control-lg" placeholder="Total Amoutnt" onkeydown = "return (!(event.keyCode>=65) && event.keyCode!=32);" ID="text_total" runat="server" OnTextChanged="text_total_TextChanged" ReadOnly="True"></asp:TextBox>
 
 
                                             <label class="form-label mt-4" for="form3Example1q">To Destination :</label>
