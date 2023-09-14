@@ -16,6 +16,7 @@ namespace Anjani_Courier_Service.Content
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=F:\Parth\Anjani_Courier_Service\Anjani_Courier_Service\App_Data\Login.mdf;Integrated Security=True");
         protected void Page_Load(object sender, EventArgs e)
         {
+           
         }
 
         protected void Button1_Click(object sender, EventArgs e)
