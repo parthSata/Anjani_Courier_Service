@@ -58,3 +58,17 @@ namespace Anjani_Courier_Service
         }
     }
 }
+/*
+CREATE TABLE [dbo].[Track Status] (
+    [Id]           INT           IDENTITY (1, 1) NOT NULL,
+    [Docket No]    NVARCHAR (50) NOT NULL,
+    [Company name] NVARCHAR (50) NOT NULL,
+    [From Center]  NVARCHAR (50) NOT NULL,
+    [To Center]    NVARCHAR (50) NOT NULL,
+    [Date Time]    NVARCHAR (50) NOT NULL,
+    [Condition]    NVARCHAR (50) NOT NULL,
+    CONSTRAINT [PK_Track Status] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+*/
