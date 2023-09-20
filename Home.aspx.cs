@@ -34,6 +34,10 @@ namespace Anjani_Courier_Service
         protected void Button2_Click(object sender, EventArgs e)
         {
             Response.Redirect("Login.aspx");
+            //CourierManagement
+            //xereh26977
+            //xereh26977
+            
         }
     }
 }
